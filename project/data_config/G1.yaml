@@ -1,0 +1,89 @@
+# Ultralytics YOLOv5 🚀, AGPL-3.0 license
+# COCO 2017 dataset http://cocodataset.org by Microsoft
+# Example usage: python train.py --data coco.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco  ← downloads here (20.1 GB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# train: ./ZcData/ROI_ignore_1121add/images/train
+# val: ./ZcData/ROI_ignore_1121add/images/val
+
+path: /mnt/sdb/ZQC/project/G1_2_detect/dataset # dataset root dir
+train: images/train # train images (relative to 'path') 118287 images
+val: images/val # val images (relative to 'path') 5000 images
+test: images/test # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# Classes
+names:
+  0: CiHuan_B_0
+  1: CiHuan_B_1
+  2: CiHuan_B_2
+  3: CiHuan_W_0
+  4: CiHuan_W_1
+  5: BUSN_0
+  6: BUSN_1
+  7: BUS_R
+  8: BUS_B
+  9: 3PT_0
+  10: 3PT_1
+  11: KaKou_0
+  12: KaKou_1
+  13: KaKou_2
+  14: KaKou_3
+  15: PXCiHuan_0
+  16: BoxEdge_0
+  17: BoxEdge_1
+  18: LuoSi_0
+  19: LuoSi_1
+  20: LuoSi_2
+  21: LuoSi_3
+  22: LuoSi_4
+  23: LuoSi_5
+  24: JueYuanDian_0
+  25: ZaDai_0
+  26: ZaDai_1
+  27: LuoZhu_0
+  28: LuoZhu_1
+  29: FengShan_0
+  30: Line_0
+  31: Line_1
+  32: Line_2
+  33: Line_3
+  34: TuiZhen_0
+  35: TuiZhen_1
+  36: 20Pin_0
+  37: 20Pin_1
+  38: PLC_3PT_0
+  39: PLC_3PT_1
+  40: AC_Line_Bus_0
+  41: AC_Line_Bus_1
+  42: AC_ZaDai_0
+  43: AC_ZaDai_1
+  44: RST_0
+  45: RST_1
+  46: RST_2
+  47: ECP_Line_0
+  48: ECP_Line_1
+  49: MarkPoint
+  50: 2P_0
+  51: RST_00
+  52: RST_22
+  53: MarkPoint_B
+  54: MarkPoint_A
+  55: BarCode
+  56: FengShan_1
+  57: AC_TongXunXian_0
+  58: AC_TongXunXian_1
+  59: XianShu_KunZa_0
+  60: XianShu_KunZa_1
+  61: DianRong_HuaHen
+  62: ChaTou_XianxuYanse_1
+  63: HuBianJK_0
+  64: HuBianJK_1
+  65: Ignore_9_10_11_12
+  66: Ignore_34
+  67: Ignore_4
+  68: Ignore_6
+  69: BaiJiao
